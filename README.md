@@ -13,15 +13,15 @@ Características
  - Consulta de status do SMS
  - Testes unitários
  - Testes funcionais 
- - 100% code documentation
- - Validado com FxCop e StyleCop. 
+ - Código 100% documentado
+ - Validado com FxCop e StyleCop 
  
 --------
 
 Instalação
 ===
 PM> Install-Package IAgenteSmsSharp
-> 
+
 
 Usando
 ===
@@ -29,7 +29,10 @@ Usando
 Criando o client
 ---
 ```csharp
-var client = new SmsClient("http://www.iagentesms.com.br/webservices/http.php", "<username>", "<senha>");
+var client = new SmsClient(
+"http://www.iagentesms.com.br/webservices/http.php", 
+"<username>", 
+"<senha>");
 
 ```
 
@@ -49,6 +52,8 @@ Consultando o status de uma mensagem
 ---
 ```csharp
 MessageStatus status = client.GetMessageStatus(1); // Informe o ExternalId utilizado no envio da mensagem.
+
+```
 
 --------
 
