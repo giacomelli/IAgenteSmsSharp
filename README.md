@@ -67,6 +67,7 @@ FAQ
 Problemas? 
  - Dê uma olhada no arquivo [SmsClientTest](src/IAgenteSmsSharp.FunctionalTests/SmsClientTest.cs) do projeto de testes funcionais, ele é um ótimo exemplo de como utilizar a library (não esqueça de configurar o arquivo app.config).
  - Leia o [documento de integração http](docs/api-http-iagentesms.pdf) fornecido pela IAgenteSms.
+ - Entre em contato com equipe da IAgente Sms através do [http://www.iagentesms.com.br](http://www.iagentesms.com.br).
 
 Roadmap
 -------- 
