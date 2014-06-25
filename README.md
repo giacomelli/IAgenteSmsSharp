@@ -1,7 +1,5 @@
 IAgenteSmsSharp
 ===============
-[![Build Status](https://travis-ci.org/giacomelli/IAgenteSmsSharp.png?branch=master)](https://travis-ci.org/giacomelli/IAgenteSmsSharp)
-
 Client library .NET para integração HTTP com o serviço de envio de SMS da IAgente (http://www.iagentesms.com.br)
 
 --------
