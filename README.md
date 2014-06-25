@@ -40,9 +40,13 @@ Enviando mensagem
 ---
 ```csharp
 var msg = new Message();
+
+// Identificador da mensagem em seu sistema (codigosms).
 msg.ExternalId = 1;
-msg.Receivers.Add("51999999999"); // Número de telefone com DDD.
-msg.Text = "Exemplo de envio de mensagem");
+
+// Número de telefone com DDD.
+msg.Receivers.Add("51999999999"); 
+msg.Text = "Exemplo de envio de mensagem";
 
 client.SendMessage(msg);
 
@@ -51,7 +55,8 @@ client.SendMessage(msg);
 Consultando o status de uma mensagem
 ---
 ```csharp
-MessageStatus status = client.GetMessageStatus(1); // Informe o ExternalId utilizado no envio da mensagem.
+// Informe o ExternalId utilizado no envio da mensagem.
+MessageStatus status = client.GetMessageStatus(1); 
 
 ```
 
