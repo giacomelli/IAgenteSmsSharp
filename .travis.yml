@@ -1,0 +1,10 @@
+language: c
+ 
+install:
+  - sudo apt-get install mono-devel mono-gmcs nunit-console
+  - mozroots --import --sync
+ 
+script:
+  - xbuild ./src/IAgenteSmsSharp.sln /property:"Configuration=Debug;Platform=Any CPU"
+  - nunit-console ./src/IAgenteSmsSharp.UnitTests/bin/Debug/IAgenteSmsSharp.UnitTests.dll
+  - nunit-console ./src/IAgenteSmsSharp.FunctionalTests/bin/Debug/IAgenteSmsSharp.FunctionalTests.dll
