@@ -90,3 +90,4 @@ Em outras palarvas, você pode utilizar essa bibleoteca para desenvolver qualque
 Change Log
 ======
  - 1.0.0 Primeira versão.
+ - 1.0.1 Remove acentos da mensagem antes de enviar.

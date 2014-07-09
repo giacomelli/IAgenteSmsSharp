@@ -68,7 +68,7 @@ namespace IAgenteSmsSharp
 
             var parameters = new Dictionary<string, string>();
             parameters.Add("celular", String.Join(", ", message.Receivers));
-            parameters.Add("mensagem", message.Text);
+            parameters.Add("mensagem", message.Text.RemoveAccents());
 
             if (message.ExternalId.HasValue)
             {
